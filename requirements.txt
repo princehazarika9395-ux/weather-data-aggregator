@@ -5,3 +5,4 @@ requests>=2.31
 folium>=0.17
 streamlit-folium>=0.23
 reportlab>=4.0
+streamlit-autorefresh
