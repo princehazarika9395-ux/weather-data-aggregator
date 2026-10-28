@@ -409,14 +409,14 @@ weather_map = folium.Map(
     tiles="OpenStreetMap",
     control_scale=True,
 )
-
 folium.TileLayer(
-    tiles="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png",
-    attr="© Stadia Maps © OpenMapTiles © OpenStreetMap contributors",
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+    attr="Tiles © Esri",
     name="Dark Map",
     overlay=False,
-    control=True,
+    control=True
 ).add_to(weather_map)
+
 # Satellite map layer
 folium.TileLayer(
     tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
